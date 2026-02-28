@@ -7,17 +7,17 @@ the same year the Casio fx-7700GB was released.
 
 ## INTRODUCTION
 
-Some Casio calculators, including fx-7700GB, have 2,5mm plug for sending and
-receiving data with other calculators or PCs.
+Some Casio calculators, including fx-7700GB, have serial interface 
+with 2.5mm plug for exchanging data with other calculators and PCs.
 
- - This line carries RS-232 TTL 5V signal;
- - Can be configured to use 1200, 2400, 4800 and 9600 baud data rate;
- - Can be set to Even, Odd or None parity;
+ - The communication line carries RS-232 TTL 5V signal
+ - Data rate can be configured as 1200, 2400, 4800 and 9600 baud
+ - Parity can be set to Even, Odd or None
 
 Casio provided optional cables for connecting two calculators, part numbers
-SB-60 or SB-62, and also optional battery powered level-shifter kits
+**SB-60** or **SB-62**, and also optional battery powered level-shifter kits
 for connecting the calculator to PC via native serial interface, part numbers
-FA-100 or FA-121 and maybe also others.
+**FA-100** or **FA-121** and maybe also others.
 
 
 ## REQUIREMENTS
@@ -43,11 +43,11 @@ modifies interrupts, uses system timer chip and manages directly LPT hardware.
 It is meant to be used on the single-threaded system.
 
 The binaries are built, using Borland development tools:
-Borland C++ v3.1
-Borland Turbo Assembler v3.1
-Borland H2ASH Processor v3.1
-Borland Make v3.6
-Borland Turbo Link v5.1
+* Borland C++ v3.1
+* Borland Turbo Assembler v3.1
+* Borland H2ASH Processor v3.1
+* Borland Make v3.6
+* Borland Turbo Link v5.1
 
 
 ## BUILDING
@@ -66,8 +66,8 @@ CASIO.EXE - menu driven simplistic interface, just run it and follow the UI.
 	chipset, at least with the i8259 PICU, i8253 timer chip and i8255 PPI.
 
 PRG2TXT.EXE - command line utility for converting binary program files into human
-	readable text files.
-	Usage:
+	readable text files.  
+	Usage:  
 	PRG2TXT *programfile* *textfile*
 
 
