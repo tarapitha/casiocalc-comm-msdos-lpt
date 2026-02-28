@@ -1,0 +1,52 @@
+
+                       Casio fx-7700GB
+                       ~~~~~~~~~~~~~~~
+
+  Original cable ( SB-60 ) connections:
+           _
+          / \
+          ³ ³ ( 1 )                   C  1 \   / 1 ( RxD )  W
+          ÆÍµ                         A      X              O
+          ³ ³ ( 2 )                   S  2 /   \ 2 ( TxD )  R
+          ÆÍµ                         I                     L
+          ³ ³ ( 3 ) GND               O  3 ----- 3 ( GND )  D
+       ÚÄÍÏÍÏÍÄ¿
+       ³       ÀÄ___
+       ³            ----¿_ __
+       ³                ³ ³  ³--Â -¿
+       ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ-Á -Á -Á -Ù
+
+ Electrical characteristics: TTL compatible
+
+ Technical characteristics of socket:                              ____
+                                                                 /      \
+ D  = 2.4 mm    ( Global diameter )                            /  Shape   \
+ D1 = 1.8 mm    ( Diameter at the bottom edge of contact 1 Ä¿ |     of     | )
+ L1 = 3.9 mm    ( Li -> lenght of contact i )               ³  \    C1    /
+ L2 = 1.7 mm                                                ³   \        /
+ L3 = 4.5 mm                                                ³    \      /
+ LS = 0.7 mm    ( Lenght of spaces between contacts )       À> ___\    /___
+                                                              |            |
+
+ To use accompaning communication program, one must connect
+ calculator with 386/486AT first parallel port according to diagram below:
+
+                      fx-7700GB          LPT1 of 386/486AT
+
+                      ( RxD )  1 \   / 13 ( SLCT )
+                                   X
+                      ( TxD )  2 /   \ 17 ( SLCT IN )
+
+                      ( GND )  3 ----- 25 ( GND )
+
+ In order to start communication:
+
+   - turn power off on both the 386/486AT and the calculator
+   - connect them according to specification above
+   - turn on 386/486AT
+   - turn on calculator
+   - run the communication program on the 386/486AT
+   - switch on the communication mode of the calculator
+   - make the necessary program transfers
+
+                                                        Good luck ...

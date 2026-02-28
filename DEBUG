@@ -1,0 +1,42 @@
+#
+# CASIO fx-7700GB data communication pacage make file
+#
+
+.autodepend
+
+.precious: casio.exe trans.exe gr.exe
+
+casio.upd: casio.exe prg2txt.exe gr.exe
+        @echo $** > $<
+
+.c.exe:
+        @bcc $<
+
+# Rules to make data communication program with CASIO fx-7700GB
+# CASIO.EXE
+
+casio.exe: casio.obj casi.obj
+        @tlink /v /x /L\borlandc\lib \borlandc\lib\c0s $**, $*, , cs
+
+casio.obj: casio.c
+        @bcc -v -c -1 -ms -b- $**
+
+casi.obj: casi.asm casio.ash
+        tasm /zi /t /z /mx /m casi.asm
+
+casio.ash: casio.h
+        h2ash -qc -b- $**
+
+# PRG2TXT.EXE helps to undrestand CASIO fx-7700GB programs whitch were
+# transferred to PC
+
+prg2txt.exe: prg2txt.c trtable.h
+
+
+# GR.EXE - the same as PRG2TXT.EXE but works on full memory dumps
+
+gr.exe: gr.obj egavga.obj litt.obj
+        @tlink /x /L\borlandc\lib \borlandc\lib\c0s $**, $*, , graphics emu maths cs
+
+gr.obj: gr.c
+        @bcc -c -1 gr.c
