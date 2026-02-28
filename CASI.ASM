@@ -1,3 +1,12 @@
+; SPDX-License-Identifier: GPL-3.0-or-later
+; Copyright (C) 2026 Robert Tiismus
+
+; CASI.ASM
+;
+; LPT port RS-232 TTL-5V driver for menu driven communication utility for
+; transmitting data between Casio fx-7700GB Program-Link serial interface and
+; MS-DOS PC LPT interface
+
         .386
 
         title   casi

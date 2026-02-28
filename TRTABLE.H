@@ -1,3 +1,12 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 Robert Tiismus
+
+/*
+* TRTABLE.H
+*
+* Header file for PRG2TXT.C
+*
+*/
 
 unsigned char trtable[256][13] =
 {"@","f","p","n","æ","m","k","M","G","T","P","E","\x16\x0D\x0A","\x0D\x0A",

@@ -1,3 +1,13 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 Robert Tiismus
+
+/*
+* PRG2TXT.C
+*
+* Utility for converting downloaded Casio fx-7700GB binary iprogram files
+* into human-readable text files
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

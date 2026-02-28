@@ -1,3 +1,13 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 Robert Tiismus
+
+/*
+* CASIO.C
+*
+* Menu driven communication utility for transmitting data between 
+* Casio fx-7700GB Program-Link serial interface and MS-DOS PC LPT interface
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

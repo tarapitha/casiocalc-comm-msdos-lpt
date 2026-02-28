@@ -1,3 +1,13 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 Robert Tiismus
+
+/*
+* CASIO.H
+*
+* Header file for menu driven communication utility for transmitting data between 
+* Casio fx-7700GB Program-Link serial interface and MS-DOS PC LPT interface
+*/
+
 // LPT1 port address
 
 #define LPT     0x379
